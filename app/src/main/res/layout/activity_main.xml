@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.samsung.alarm.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="59dp"
+            android:src="@drawable/alarm_nav"
+            android:padding="10dp"
+            android:id="@+id/alarmTab"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="59dp"
+            android:src="@drawable/clock"
+            android:padding="10dp"
+            android:id="@+id/clockTab"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="59dp"
+            android:src="@drawable/stopwatch"
+            android:padding="10dp"
+            android:id="@+id/stopwatchTab"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="59dp"
+            android:src="@drawable/timer"
+            android:padding="10dp"
+            android:id="@+id/timerTab"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alarm_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/black"
+        app:srcCompat="@drawable/add" />
+    <!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@color/white"-->
+<!--        tools:context=".MainActivity">-->
+<!--        <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--            android:id="@+id/bottomAppBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="65dp"-->
+<!--            app:contentInsetStart="0dp"-->
+<!--            app:backgroundTint="#77dd77"-->
+<!--            app:fabCradleMargin="15dp"-->
+<!--            app:fabCradleRoundedCornerRadius="50dp"-->
+<!--            android:layout_gravity="bottom">-->
+
+<!--            <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--                android:id="@+id/bottomNavigationView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="?android:selectableItemBackground"-->
+<!--                app:itemHorizontalTranslationEnabled="false"-->
+<!--                app:menu="@menu/bottom_navigation"-->
+<!--                app:itemIconTint="#77dd77"-->
+<!--                app:itemTextColor="#FFFFFF"-->
+<!--                app:labelVisibilityMode="labeled"/>-->
+
+<!--        </com.google.android.material.bottomappbar.BottomAppBar>-->
+<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
